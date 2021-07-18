@@ -1,0 +1,98 @@
+.footer {
+  padding: 45px 0;
+  background-color: #1c242a;
+  &__content {
+    display: flex;
+    @media (max-width: 767px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__column {
+    &:first-child {
+      flex: 0 0 180px;
+    }
+    &_full {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__logo {
+    display: inline-flex;
+    margin: 5px 0 20px 0;
+  }
+
+  &__info {
+    color: #bb9c66;
+  }
+
+  &__menu {
+    padding: 0px 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin: 10px 15px 0 0;
+    }
+    @media (max-width: 767px) {
+      justify-content: center;
+      margin: 15px 7px 0px 7px;
+    }
+  }
+
+  &__link {
+    font-family: "PFDin";
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    @media (min-width: 992px) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__contacts {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: 767px) {
+      align-items: center;
+    }
+  }
+
+  &__phone {
+    white-space: nowrap;
+    display: flex;
+    align-items: flex-start;
+    font-size: 50px;
+    font-family: "BravoRG";
+    color: #bb9c66;
+    text-transform: uppercase;
+    small {
+      margin: 2px 5px 0 0;
+      font-size: 25px;
+    }
+    @media (max-width: 992px) {
+      font-size: 40px;
+      small {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__callback {
+    color: #bb9c66;
+    background: url("../img/icons/callback.png") left no-repeat;
+    padding: 0 0 0 12px;
+    span {
+      border-bottom: 1px dashed #bb9c66;
+    }
+  }
+}
